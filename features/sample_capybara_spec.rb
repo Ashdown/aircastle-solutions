@@ -8,10 +8,10 @@ Capybara.app = Sinatra::Application
 
 feature 'Capybara Test Application' do
 
-  scenario "says Home Page" do
+  scenario "says Aircastle Solutions" do
     visit '/'
 
-    expect(page).to have_text('Home Page')
+    expect(page).to have_text('Aircastle Solutions')
   end
 
 end
