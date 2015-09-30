@@ -1,23 +1,10 @@
-Aircastle Solutions Codebase
-============================
+Aircastle Solutions
+===================
 
-[url](http://www.aircastle-solutions.com)
+Public facing website for Aircastle Solutions.  Ruby Sinatra and React codebase
 
-Simple Ruby application with the following features
+[http://www.aircastle-solutions.com](http://www.aircastle-solutions.com)
 
-    * Sinatra
-    * Hosted on heroku
-    * Slim templates
-    * Sprockets and asset pipeline
-    * SCSS
-    * Jasmine testing
-    * rspec testing
-    * Feature testing
-    * React
-    * Implementation of Flux
-    
-[Sinatra Test App on Heroku](https://sheltered-taiga-2980.herokuapp.com/) 
-    
 Helpful Commands
 ----------------
 
@@ -60,14 +47,5 @@ Install jsx compiler
 Run the rake command
 
 `rake compilejsx`
-
-Database Integration
---------------------
-
-For more see
-
-[Making a simple database driven website with sinatra and heroku](https://samuelstern.wordpress.com/2012/11/28/making-a-simple-database-driven-website-with-sinatra-and-heroku/)  
-
-
 
     
