@@ -1,5 +1,9 @@
 src_files:
-  - assets/javascripts/*.js
+
+  - assets/javascripts/lib/object-assign.js
+  - assets/javascripts/lib/*.js
+  - assets/javascripts/app.prod/globals.js
+  - assets/javascripts/app.prod/*/*.js
 
 spec_files:
   - '**/*[sS]pec.js'
