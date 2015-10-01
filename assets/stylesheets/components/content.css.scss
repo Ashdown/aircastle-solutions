@@ -1,0 +1,49 @@
+@import 'mixins';
+
+.content {
+
+  .gold-border {
+    margin:0 auto;
+    width: 800px;
+    color: #333;
+    font-size: 60px;
+    overflow: hidden;
+    background-color: #513717;
+
+  }
+
+  .gold-shine {
+    height: 200px;
+    width: 10px;
+    position: fixed;
+    top: 110px;
+    display: block;
+    margin: auto;
+    @include linear-gradient-six(#513717, #9d6b2d, #fafef4, #9d6b2d, #9d6b2d, #513717);
+
+    &.left {
+      right: 50%;
+      margin-right: 390px;
+    }
+
+    &.right {
+      left: 50%;
+      margin-left: 390px;
+
+    }
+
+  }
+
+  .black-border {
+    margin: 10px;
+    overflow: hidden;
+    @include linear-gradient(#333333, #000000);
+  }
+
+
+  .tablet {
+    margin: 38px;
+    @include radial-gradient(#f6d995, #af8050);
+  }
+
+}

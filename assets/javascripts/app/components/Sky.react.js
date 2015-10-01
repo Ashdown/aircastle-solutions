@@ -5,7 +5,7 @@
         render: function(){
 
             return (
-                <div>
+                <div className  ="sky">
                     <p>The Sky goes here...</p>
                 </div>
             );

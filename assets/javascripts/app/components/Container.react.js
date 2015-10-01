@@ -4,7 +4,7 @@
 
         render: function () {
             return (
-                <div>
+                <div className="container">
                     <App.Components.Sky/>
                     <App.Components.Content/>
                     <App.Components.Footer/>

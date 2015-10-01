@@ -1,0 +1,35 @@
+@mixin linear-gradient($top, $bottom) {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$top+0,000000+100 */
+  background: $top; /* Old browsers */
+  background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 ); /* IE6-9 */
+
+}
+
+@mixin linear-gradient-six($first, $second, $third, $fourth, $fifth, $sixth) {
+  background: $first;
+  background: -moz-linear-gradient(top,  $first 0%, $second 21%, $third 41%, $fourth 62%, $fifth 82%, $sixth 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$first), color-stop(21%,$second), color-stop(41%,$third), color-stop(62%,$fourth), color-stop(82%,$fifth), color-stop(100%,$sixth)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $first 0%,$second 21%,$third 41%,$fourth 62%,$fifth 82%,$sixth 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $first 0%,$second 21%,$third 41%,$fourth 62%,$fifth 82%,$sixth 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $first 0%,$second 21%,$third 41%,$fourth 62%,$fifth 82%,$sixth 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $first 0%,$second 21%,$third 41%,$fourth 62%,$fifth 82%,$sixth 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first', endColorstr='$sixth',GradientType=0 ); /* IE6-9 */
+
+}
+
+@mixin radial-gradient($inner, $outer) {
+  background: $outer;
+  background: -moz-radial-gradient(center, ellipse cover,  $inner 0%, $outer 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$inner), color-stop(100%,$outer)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  $inner 0%,$outer 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  $inner 0%,$outer 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  $inner 0%,$outer 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  $inner 0%,$outer 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$inner', endColorstr='$outer',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

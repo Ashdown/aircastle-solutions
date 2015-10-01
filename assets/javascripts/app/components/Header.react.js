@@ -4,7 +4,12 @@
         render: function(){
             return(
                 <header>
-                    <h1>Aircastle Solutions</h1>
+                    <h1>
+                        <App.Components.Star/>
+                        <App.Components.Technology text="Aircastle Solutions"/>
+                        <App.Components.Star/>
+                    </h1>
+
                 </header>
                 )
         }
