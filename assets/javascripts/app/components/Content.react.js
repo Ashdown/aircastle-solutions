@@ -7,8 +7,7 @@
             return(
                 <div className='content'>
                     <div className='gold-border'>
-                        <div className='gold-shine left'></div>
-                        <div className='gold-shine right'></div>
+                        <div className='gold-shine'></div>
                         <div className='black-border'>
                             <div className='tablet'>
                                 <App.Components.Header/>
