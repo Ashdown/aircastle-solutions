@@ -1,0 +1,19 @@
+@import 'mixins';
+@import 'variables';
+
+.sunrise {
+  $margin: 0px;
+
+  position: fixed;
+  top: $margin;
+  right: $margin;
+  left: $margin;
+  @include radial-gradient($sunrise-inner, $sunrise-outer);
+  min-height: 320px;
+}
+
+@include respond-to(desktop) {
+  .sunrise {
+    min-height: 600px;
+  }
+}

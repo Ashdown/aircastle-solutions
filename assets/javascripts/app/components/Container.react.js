@@ -8,6 +8,7 @@
                     <App.Components.Sky/>
                     <App.Components.Content/>
                     <App.Components.Footer/>
+                    <App.Components.Sunrise/>
                 </div>
                 );
         }

@@ -2,11 +2,13 @@
 
 .content {
 
+  position: relative;
+
   .gold-border {
-    margin:0 auto;
-    width: 800px;
+    margin: 0 auto;
+    width: 300px;
     color: #333;
-    font-size: 60px;
+    font-size: 16px;
     overflow: hidden;
     background-color: #513717;
 
@@ -30,11 +32,38 @@
     @include linear-gradient(#333333, #000000);
   }
 
-
   .tablet {
-    margin: 38px;
+    margin: 24px;
     background-color: #af8050;
     @include radial-gradient(#f6d995, #af8050);
   }
 
+}
+
+@include respond-to(mobile-landscape) {
+  .content {
+    .gold-border {
+      width: 460px;
+    }
+  }
+}
+
+@include respond-to(tablet) {
+  .content {
+    .gold-border {
+      width: 748px;
+    }
+  }
+}
+
+@include respond-to(desktop) {
+  .content {
+    .gold-border {
+      width: 800px;
+      font-size: 60px;
+    }
+    .tablet {
+      margin: 38px;
+    }
+  }
 }

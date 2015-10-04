@@ -1,3 +1,43 @@
+//@include respond-to(mobile-landscape) {
+//  .thing {
+//    background-color: red;
+//  }
+//}
+//
+//@include respond-to(tablet) {
+//  .thing {
+//    background-color: green;
+//  }
+//}
+//
+//@include respond-to(desktop) {
+//  .thing {
+//    background-color: yellow;
+//  }
+//}
+
+@mixin respond-to($device) {
+
+  @if $device == mobile-landscape {
+    @media (min-width: 480px) {
+      @content
+    }
+  }
+
+  @else if $device == tablet {
+    @media (min-width: 768px) {
+      @content
+    }
+  }
+
+  @else if $device == desktop {
+    @media (min-width: 1020px) {
+      @content
+    }
+  }
+
+}
+
 @mixin linear-gradient($top, $bottom) {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$top+0,000000+100 */
   background: $top; /* Old browsers */
@@ -24,12 +64,16 @@
 }
 
 @mixin radial-gradient($inner, $outer) {
+
+  $start: 0%;
+  $stop: 66%;
+
   background: $outer;
-  background: -moz-radial-gradient(center, ellipse cover,  $inner 0%, $outer 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$inner), color-stop(100%,$outer)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  $inner 0%,$outer 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  $inner 0%,$outer 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  $inner 0%,$outer 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  $inner 0%,$outer 100%); /* W3C */
+  background: -moz-radial-gradient(center, ellipse cover,  $inner $start, $outer $stop); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, $stop, color-stop($start,$inner), color-stop($stop,$outer)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  $inner $start,$outer $stop); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  $inner $start,$outer $stop); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  $inner $start,$outer $stop); /* IE10+ */
+  background: radial-gradient(ellipse at center,  $inner $start,$outer $stop); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$inner', endColorstr='$outer',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
