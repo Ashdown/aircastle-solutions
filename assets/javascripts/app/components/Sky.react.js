@@ -7,8 +7,8 @@
             return (
                 <div className="sky">
                     <App.Components.Clouds/>
-                    <App.Components.Tower/>
                     <App.Components.RedHills/>
+                    <App.Components.Tower/>
                     <App.Components.BlueHills/>
                 </div>
             );

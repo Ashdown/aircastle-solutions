@@ -1,7 +1,8 @@
 @import 'mixins';
 
 .sky {
-  height: 200px;
+  height: 450px;
   position: relative;
   z-index: 100;
+  overflow: hidden;
 }

@@ -6,8 +6,8 @@
                 <svg className="blue-hills">
                     <defs>
                         <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="289.27500000000003" y1="31.575000000000003" x2="253.82500000000002" y2="137.825" spreadMethod="pad">
-                            <stop offset="0%" style={{stopColor:"#514758", stopOpacity:1}} />
-                            <stop offset="100%" style={{stopColor:"#3A325D", stopOpacity:1}} />
+                            <stop offset="0%" style={{stopColor:"#514758"}} />
+                            <stop offset="100%" style={{stopColor:"#3A325D"}} />
                         </linearGradient>
 
                         <linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="300.03749999999997" y1="-21.900000000000006" x2="229.7625" y2="166.20000000000002" spreadMethod="pad">
