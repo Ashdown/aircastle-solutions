@@ -1,7 +1,9 @@
+@import 'mixins';
+
 .clouds {
 
   position: absolute;
-  top: 123px;
+  top: 109px;
   right: 0;
   left: 0;
 
@@ -10,5 +12,11 @@
     width: 380px;
     margin: 0 16px;
 
+  }
+}
+
+@include respond-to(desktop) {
+  .clouds {
+    top: 123px;
   }
 }

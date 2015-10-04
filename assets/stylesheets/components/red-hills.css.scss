@@ -1,8 +1,14 @@
+@import 'mixins';
+
 .red-hills {
   width: 1090px;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 288px;
-  margin: 0 auto;
+  top: 238px;
+  margin-left: -545px;
+}
+
+@include respond-to(desktop){
+  .red-hills {
+    top: 288px;
+  }
 }

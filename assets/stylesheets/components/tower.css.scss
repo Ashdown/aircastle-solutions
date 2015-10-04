@@ -1,8 +1,13 @@
+@import 'mixins';
+
 .tower {
   height: 470px;
   width: 400px;
   position: absolute;
-  top: 88px;
   margin-left: -200px;
+  top: 38px;
+}
 
+@include respond-to(desktop) {
+  top: 88px;
 }

@@ -1,8 +1,14 @@
 @import 'mixins';
 
 .sky {
-  height: 450px;
+  height: 400px;
   position: relative;
   z-index: 100;
   overflow: hidden;
+}
+
+@include respond-to(desktop) {
+  .sky {
+    height: 450px;
+  }
 }
