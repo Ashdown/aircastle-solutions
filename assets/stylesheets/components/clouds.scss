@@ -2,12 +2,13 @@
 
   position: absolute;
   top: 123px;
-  right: 16px;
-  left: 16px;
+  right: 0;
+  left: 0;
 
   .cloud {
     height: 374px;
     width: 380px;
+    margin: 0 16px;
 
   }
 }

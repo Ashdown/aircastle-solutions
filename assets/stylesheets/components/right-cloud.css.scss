@@ -1,3 +1,12 @@
+@import 'mixins';
+
 .right-cloud {
+  display: none;
   float: right;
+}
+
+@include respond-to(desktop) {
+  .right-cloud {
+    display: inline-block;
+  }
 }
