@@ -10,13 +10,18 @@
   .cloud {
     height: 374px;
     width: 380px;
-    margin: 0 16px;
+    margin: 0 0 0 -190px;
+    position: absolute;
 
   }
 }
 
-@include respond-to(tablet-landscape) {
+@include respond-to(tablet) {
   .cloud-container {
     top: 123px;
+    .cloud {
+      margin: 0 16px;
+      position: static;
+    }
   }
 }
