@@ -1,4 +1,4 @@
-@import 'mixins';
+@import '../mixins';
 
 @include respond-to(desktop) {
   .left-cloud {
