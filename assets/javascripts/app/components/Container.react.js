@@ -5,9 +5,11 @@
         render: function () {
             return (
                 <div className="container">
-                    <App.Components.Sky/>
-                    <App.Components.Content/>
-                    <App.Components.Footer/>
+                    <div className="content">
+                        <App.Components.Sky/>
+                        <App.Components.Tablet/>
+                        <App.Components.Footer/>
+                    </div>
                     <App.Components.Sunrise/>
                 </div>
                 );

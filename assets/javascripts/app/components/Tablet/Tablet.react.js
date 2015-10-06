@@ -1,15 +1,15 @@
 (function (React, App) {
 
-    App.Components.Content = React.createClass({
+    App.Components.Tablet = React.createClass({
 
         render: function () {
 
             return(
-                <div className='content'>
+                <div className='tablet'>
                     <div className='gold-border'>
                         <div className='gold-shine'></div>
                         <div className='black-border'>
-                            <div className='tablet'>
+                            <div className='face'>
                                 <App.Components.Header/>
                                 <p>Software and web development</p>
                                 <h2>Specialising in</h2>
