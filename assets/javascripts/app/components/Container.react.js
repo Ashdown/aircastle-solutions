@@ -8,7 +8,6 @@
                     <div className="content">
                         <App.Components.Sky/>
                         <App.Components.Tablet/>
-                        <App.Components.Footer/>
                     </div>
                     <App.Components.Sunrise/>
                 </div>

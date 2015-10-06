@@ -16,6 +16,8 @@
                         </div>
                     </div>
 
+                    <div className="background background-top"></div>
+                    <div className="background background-bottom"></div>
                 </div>
                 );
 
