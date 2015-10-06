@@ -1,0 +1,14 @@
+.text {
+  color: #222;
+  position: relative;
+  display: block;
+  &:before {
+    content: attr(title);
+    position: absolute;
+    top: 2px;
+    right: 0;
+    left: 0;
+    color: #fff;
+    opacity: 0.1;
+  }
+}

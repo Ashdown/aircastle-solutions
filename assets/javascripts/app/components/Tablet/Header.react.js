@@ -5,9 +5,8 @@
             return(
                 <header>
                     <h1 className="main-header">
-                        <App.Components.Technology text="Aircastle Solutions"/>
+                        <App.Components.Text content="Aircastle Solutions"/>
                     </h1>
-
                 </header>
                 )
         }

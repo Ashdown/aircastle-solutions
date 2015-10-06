@@ -5,24 +5,24 @@
             return(
                 <div className="face-content">
                     <App.Components.Header/>
-                    <p>Software and web development</p>
-                    <h2>Specialising in</h2>
+                    <p><App.Components.Text content="Software and web development"/></p>
+                    <h2><App.Components.Text content="Specialising in"/></h2>
                     <ul>
                         <li>
-                            <h3><App.Components.Technology text="JavaScript"/></h3>
+                            <h3><App.Components.Text content="JavaScript"/></h3>
                             <ul>
-                                <li><App.Components.Technology text="React"/></li>
-                                <li><App.Components.Technology text="AngularJS"/></li>
-                                <li><App.Components.Technology text="Ember.js"/></li>
-                                <li><App.Components.Technology text="jQuery"/></li>
+                                <li><App.Components.Text content="React"/></li>
+                                <li><App.Components.Text content="AngularJS"/></li>
+                                <li><App.Components.Text content="Ember.js"/></li>
+                                <li><App.Components.Text content="jQuery"/></li>
                             </ul>
                         </li>
-                        <li><App.Components.Technology text="Raphaël"/></li>
-                        <li><App.Components.Technology text="CSS"/></li>
-                        <li><App.Components.Technology text="Ruby Sinatra"/></li>
-                        <li><App.Components.Technology text="Heroku"/></li>
+                        <li><App.Components.Text content="Raphaël"/></li>
+                        <li><App.Components.Text content="CSS"/></li>
+                        <li><App.Components.Text content="Ruby Sinatra"/></li>
+                        <li><App.Components.Text content="Heroku"/></li>
                     </ul>
-                    <h2> Links</h2>
+                    <h2><App.Components.Text content="Links"/></h2>
                     <ul>
                         <li>
                             <a href="https://github.com/"> GitHub</a>
