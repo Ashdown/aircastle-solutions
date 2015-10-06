@@ -11,24 +11,23 @@
     margin: 0 10px;
     overflow: hidden;
     background-color: #513717;
+    position: relative;
 
   }
 
-//  .gold-shine {
-//    position: fixed;
-//    top: 110px;
-//    bottom: 190px;
-//    width: 800px;
-//    left: 50%;
-//    margin-left: -400px;
-//    @include linear-gradient-six(#513717, #9d6b2d, #fafef4, #9d6b2d, #9d6b2d, #513717);
-//    -webkit-clip-path: polygon(0 0, 0 800px, 10px 800px, 10px 0px, 790px 0px, 790px 790px, 10px 790px, 10px 800px, 800px 800px, 800px 0);
-//
-//  }
+  .gold-border-shine {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    left: 0;
+    height: 200px;
+    @include linear-gradient-six(#513717, #9d6b2d, #fafef4, #9d6b2d, #9d6b2d, #513717);
+  }
 
   .black-border {
     margin: 8px;
     overflow: hidden;
+    position: relative;
     @include linear-gradient(#333333, #000000);
   }
 
@@ -36,7 +35,21 @@
     margin: 16px;
     overflow: hidden;
     background-color: #af8050;
+    position: relative;
+  }
+
+  .face-shine {
+    height: 200px;
+    left: 0;
+    right: 0;
+    top: -100px;
     @include radial-gradient(#f6d995, #af8050);
+    position: absolute;
+  }
+
+  .face-content {
+    position: relative;
+    z-index: 100;
   }
 
   .main-header {
