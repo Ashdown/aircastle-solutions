@@ -6,7 +6,7 @@
 
             return (
                 <div className="sky">
-                    <App.Components.Clouds/>
+                    <App.Components.CloudContainer/>
                     <App.Components.RedHills/>
                     <App.Components.Tower/>
                     <App.Components.BlueHills/>

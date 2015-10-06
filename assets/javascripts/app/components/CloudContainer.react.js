@@ -1,8 +1,8 @@
 (function(App, React){
-    App.Components.Clouds = React.createClass({
+    App.Components.CloudContainer = React.createClass({
         render: function(){
             return (
-                <div className="clouds">
+                <div className="cloud-container">
                     <App.Components.LeftCloud/>
                     <App.Components.RightCloud/>
                 </div>

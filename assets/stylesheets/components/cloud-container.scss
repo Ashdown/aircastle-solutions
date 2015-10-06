@@ -1,6 +1,6 @@
 @import 'mixins';
 
-.clouds {
+.cloud-container {
 
   position: absolute;
   top: 109px;
@@ -15,8 +15,8 @@
   }
 }
 
-@include respond-to(desktop) {
-  .clouds {
+@include respond-to(tablet-landscape) {
+  .cloud-container {
     top: 123px;
   }
 }

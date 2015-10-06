@@ -3,7 +3,7 @@
     App.Components.RedHills = React.createClass({
         render: function(){
             return(
-                <svg className="red-hills">
+                <svg className="hills red-hills">
                     <defs>
                         <linearGradient id="red_hills_gradient_1" gradientUnits="userSpaceOnUse" x1="40.6" y1="-61.9875" x2="-24.7" y2="79.3875" spreadMethod="pad">
                             <stop  offset="0%" style={{stopColor:"#61473C"}}/>

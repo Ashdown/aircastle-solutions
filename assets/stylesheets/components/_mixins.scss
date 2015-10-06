@@ -1,21 +1,3 @@
-//@include respond-to(mobile-landscape) {
-//  .thing {
-//    background-color: red;
-//  }
-//}
-//
-//@include respond-to(tablet) {
-//  .thing {
-//    background-color: green;
-//  }
-//}
-//
-//@include respond-to(desktop) {
-//  .thing {
-//    background-color: yellow;
-//  }
-//}
-
 @mixin respond-to($device) {
 
   @if $device == mobile-landscape {
