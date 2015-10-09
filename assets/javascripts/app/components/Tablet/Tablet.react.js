@@ -18,6 +18,7 @@
 
                     <div className="background background-top"></div>
                     <div className="background background-bottom"></div>
+                    <div className="background background-fade"></div>
                 </div>
                 );
 

@@ -70,6 +70,12 @@
     bottom: 0;
   }
 
+  .background-fade {
+    height: 300px;
+    bottom: 0;
+    @include linear-gradient(rgba(41,36,66,0), rgba(41,36,66,1));
+  }
+
 }
 
 @include respond-to(tablet) {

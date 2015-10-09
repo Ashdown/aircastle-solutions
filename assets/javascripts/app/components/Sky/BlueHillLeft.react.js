@@ -29,7 +29,7 @@
                         <linearGradient id="blue_hill_left_gradient_3" gradientUnits="userSpaceOnUse" x1="466.6" y1="-82.8" x2="400.5" y2="86.60000000000001" spreadMethod="pad">
                             <stop  offset="0%" style={{stopColor:"#514758"}}/>
 
-                            <stop  offset="100%" style={{stopColor:"#3A325D"}}/>
+                            <stop  offset="25%" style={{stopColor:"#3A325D"}}/>
                         </linearGradient>
                     </defs>
                     <g>
