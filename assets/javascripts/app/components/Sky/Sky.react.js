@@ -7,9 +7,11 @@
             return (
                 <div className="sky">
                     <App.Components.CloudContainer/>
-                    <App.Components.RedHills/>
+                    <App.Components.RedHillLeft/>
+                    <App.Components.RedHillRight/>
                     <App.Components.Tower/>
-                    <App.Components.BlueHills/>
+                    <App.Components.BlueHillLeft/>
+                    <App.Components.BlueHillRight/>
                 </div>
             );
         },

@@ -3,10 +3,55 @@
 .sky {
   height: 400px;
   overflow: hidden;
+
+  .hill {
+    position: absolute;
+  }
+
+  $blue-hill-offset: 54px;
+  $blue-hill-width: 1040px;
+
+  .blue-hill {
+    top: 290px;
+    width: $blue-hill-width;
+    height: 400px;
+  }
+
+  .blue-hill-left {
+    margin-left: -($blue-hill-width - $blue-hill-offset);
+  }
+
+  .blue-hill-right {
+    margin-left: - $blue-hill-offset;
+  }
+
+  $red-hill-offset: 38px;
+  $red-hill-width: 1106px;
+
+  .red-hill {
+    top: 243px;
+    width: $red-hill-width;
+    height: 504px;
+  }
+
+  .red-hill-left {
+    margin-left: -($red-hill-width - $red-hill-offset);
+  }
+
+  .red-hill-right {
+    margin-left: - $red-hill-offset;
+  }
+
 }
 
 @include respond-to(desktop) {
   .sky {
     height: 450px;
+    .blue-hill {
+      top: 342px;
+    }
+    .red-hill {
+      top: 295px;
+    }
   }
 }
