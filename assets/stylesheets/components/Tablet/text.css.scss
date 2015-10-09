@@ -1,7 +1,9 @@
+@import '../mixins';
+
 .text {
   color: #222;
   position: relative;
-  display: block;
+  display: inline-block;
   &:before {
     content: attr(title);
     position: absolute;
@@ -10,5 +12,11 @@
     left: 0;
     color: #fff;
     opacity: 0.1;
+  }
+}
+
+@include respond-to(desktop) {
+  .text {
+    font-size: 61px;
   }
 }
