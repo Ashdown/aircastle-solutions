@@ -1,7 +1,8 @@
 @import '../mixins';
+@import '../variables';
 
 .sky {
-  height: 400px;
+  height: $sky-height-mobile;
   overflow: hidden;
 
   .hill {
@@ -46,7 +47,7 @@
 
 @include respond-to(desktop) {
   .sky {
-    height: 450px;
+    height: $sky-height-desktop;
     .blue-hill {
       top: 342px;
     }

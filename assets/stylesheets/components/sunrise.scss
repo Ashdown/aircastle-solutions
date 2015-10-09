@@ -1,18 +1,21 @@
 @import 'mixins';
 @import 'variables';
 
+$vertical-height-offset: 150px;
+
 .sunrise {
   $margin: 0px;
+
   position: fixed;
   top: $margin;
   right: $margin;
   left: $margin;
   @include radial-gradient($sunrise-inner, $sunrise-outer);
-  min-height: 320px;
+  min-height: $sky-height-mobile + $vertical-height-offset;
 }
 
 @include respond-to(desktop) {
   .sunrise {
-    min-height: 600px;
+    min-height: $sky-height-desktop + $vertical-height-offset;
   }
 }
