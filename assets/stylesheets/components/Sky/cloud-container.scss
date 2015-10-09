@@ -14,14 +14,37 @@
     position: absolute;
 
   }
+
+  .right-cloud {
+    display: none;
+  }
+
 }
 
 @include respond-to(tablet) {
   .cloud-container {
     top: 123px;
+
     .cloud {
-      margin: 0 16px;
       position: static;
     }
+
+    .left-cloud {
+      float: left;
+      margin-left: 2%;
+    }
+
+    .right-cloud {
+      float: right;
+      margin-right: 2%;
+      display: inline-block;
+    }
+  }
+}
+
+@include respond-to(desktop) {
+  .cloud-container {
+    width: 1020px;
+    margin: 0 auto;
   }
 }

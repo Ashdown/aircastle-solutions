@@ -1,7 +1,0 @@
-@import '../mixins';
-
-@include respond-to(desktop) {
-  .left-cloud {
-    float: left;
-  }
-}
