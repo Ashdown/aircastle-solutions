@@ -2,14 +2,11 @@
 
     App.Components.RedHills = React.createClass({
 
-        offsetSpeed: 0.15,
-        offsetMaxLimit: 75,
-
         handleScroll: function(event){
 
-            var newOffset = event.srcElement.body.scrollTop * this.offsetSpeed;
+            var newOffset = event.srcElement.body.scrollTop * App.Constants.SkyConstants.SKY_OFFSET_SPEED;
 
-            if(newOffset >= 0 && newOffset <= this.offsetMaxLimit) {
+            if(newOffset >= 0 && newOffset <= App.Constants.SkyConstants.SKY_OFFSET_MAX_LIMIT) {
 
                 this.setState({
                     yOffset: newOffset

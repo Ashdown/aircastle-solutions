@@ -3,7 +3,7 @@
 .cloud-container {
 
   position: absolute;
-  top: 109px;
+  padding-top: 109px;
   right: 0;
   left: 0;
 
@@ -23,7 +23,7 @@
 
 @include respond-to(tablet) {
   .cloud-container {
-    top: 123px;
+    padding-top: 123px;
 
     .cloud {
       position: static;
