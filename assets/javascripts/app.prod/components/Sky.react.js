@@ -5,7 +5,7 @@
         render: function(){
 
             return (
-                React.createElement("div", null, 
+                React.createElement("div", {className: "sky"}, 
                     React.createElement("p", null, "The Sky goes here...")
                 )
             );
