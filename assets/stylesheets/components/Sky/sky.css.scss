@@ -29,10 +29,16 @@
   $red-hill-offset: 38px;
   $red-hill-width: 1106px;
 
-  .red-hill {
+  .red-hills {
     top: 243px;
-    width: $red-hill-width;
     height: 504px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .red-hill {
+    top: 0;
+    width: $red-hill-width;
   }
 
   .red-hill-left {
@@ -51,8 +57,11 @@
     .blue-hill {
       top: 342px;
     }
-    .red-hill {
+    .red-hills {
       top: 295px;
+    }
+    .red-hill {
+      top: 0;
     }
   }
 }

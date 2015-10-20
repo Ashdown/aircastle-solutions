@@ -7,9 +7,9 @@
 
         handleScroll: function(event){
 
-            var newOffset = this.state.initialOffset + (event.srcElement.body.scrollTop * this.offsetSpeed);
+            var newOffset = event.srcElement.body.scrollTop * this.offsetSpeed;
 
-            if(newOffset >= this.state.initialOffset && newOffset <= this.state.initialOffset + this.offsetMaxLimit) {
+            if(newOffset >= 0 && newOffset <= this.offsetMaxLimit) {
 
                 this.setState({
                     yOffset: newOffset
@@ -17,31 +17,18 @@
             }
         },
 
-        isTabletOrLarger: function(){
-
-            console.log('innerwidth:' + window.innerWidth);
-
-            return window.innerWidth >= 768;
-        },
-
         getInitialState: function() {
 
-            var offset = 243;
-
-            if(this.isTabletOrLarger()) {
-                offset = 295;
-            }
-
             return {
-                initialOffset: offset,
-                yOffset: offset
+                initialOffset: 0,
+                yOffset: 0
             };
         },
 
         render: function(){
 
             return(
-                <div>
+                <div className="red-hills">
                     <App.Components.RedHillLeft yOffset={this.state.yOffset}/>
                     <App.Components.RedHillRight yOffset={this.state.yOffset}/>
                 </div>
