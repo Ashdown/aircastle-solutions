@@ -1,9 +1,10 @@
 (function(App, React){
 
     App.Components.RedHillLeft = React.createClass({
+
         render: function(){
             return(
-                <svg className="hill red-hill red-hill-left">
+                <svg className="hill red-hill red-hill-left" style={{top: this.props.yOffset + 'px'}}>
                     <defs>
                         <linearGradient id="red_hill_left_gradient_1" gradientUnits="userSpaceOnUse" x1="501.75" y1="167.85000000000002" x2="633.45" y2="395.25" spreadMethod="pad">
                             <stop  offset="0%" style={{stopColor:"#513717"}}/>
@@ -55,6 +56,7 @@
                 </svg>
                 );
         }
+
     });
 
 })(App, React)
