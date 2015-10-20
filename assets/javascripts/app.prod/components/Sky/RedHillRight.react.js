@@ -3,7 +3,7 @@
     App.Components.RedHillRight = React.createClass({displayName: "RedHillRight",
         render: function(){
             return(
-                React.createElement("svg", {className: "hill red-hill red-hill-right"}, 
+                React.createElement("svg", {className: "hill red-hill red-hill-right", style: {top: this.props.yOffset + 'px'}}, 
                     React.createElement("defs", null, 
                         React.createElement("linearGradient", {id: "red_hill_right_gradient_1", gradientUnits: "userSpaceOnUse", x1: "302.825", y1: "337.55", x2: "455.77500000000003", y2: "129.45", spreadMethod: "pad"}, 
                             React.createElement("stop", {offset: "0%", style: {stopColor:"#513717"}}), 

@@ -7,8 +7,7 @@
             return (
                 React.createElement("div", {className: "sky"}, 
                     React.createElement(App.Components.CloudContainer, null), 
-                    React.createElement(App.Components.RedHillLeft, null), 
-                    React.createElement(App.Components.RedHillRight, null), 
+                    React.createElement(App.Components.RedHills, null), 
                     React.createElement(App.Components.Tower, null), 
                     React.createElement(App.Components.BlueHillLeft, null), 
                     React.createElement(App.Components.BlueHillRight, null)
