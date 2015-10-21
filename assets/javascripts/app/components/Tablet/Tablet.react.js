@@ -1,22 +1,23 @@
-(function (React, App) {
+(function (React, App, $) {
 
     App.Components.Tablet = React.createClass({
 
         handleScroll: function(event) {
 
-            var scrollTop = event.srcElement.body.scrollTop;
+            var scrollTop = event.srcElement.body.scrollTop,
+                contentOffset = ($('.gold-border').height() - $('.face-content').height()) / 2;
 
-            if(scrollTop > 300) {
-                this.setState({
-                    shineOffset: scrollTop - 300
+            this.setState({
+                goldBorderShineOffset: scrollTop,
+                tabletFaceShineOffset: scrollTop - contentOffset
                 });
-            }
-            
+
         },
 
         getInitialState: function() {
           return{
-              shineOffset: 0
+              goldBorderShineOffset: 0,
+              tabletFaceShineOffset: 0
           };
         },
 
@@ -25,10 +26,10 @@
             return(
                 <div className='tablet'>
                     <div className='gold-border'>
-                        <div className='shine gold-border-shine' style={{top: this.state.shineOffset + 'px'}}></div>
+                        <div className='shine gold-border-shine' style={{top: this.state.goldBorderShineOffset + 'px'}}></div>
                         <div className='black-border'>
                             <div className='face'>
-                                <div className="shine face-shine" style={{top: this.state.shineOffset + 'px'}}></div>
+                                <div className="shine face-shine" style={{top: this.state.tabletFaceShineOffset + 'px'}}></div>
                                 <App.Components.FaceContent/>
                             </div>
                         </div>
@@ -51,4 +52,4 @@
         }
     });
 
-})(React, App);
+})(React, App, jQuery);

@@ -32,6 +32,18 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 ); /* IE6-9 */
 }
 
+@mixin linear-gradient-five($first, $second, $third, $fourth, $fifth) {
+  background: $first;
+  background: -moz-linear-gradient(top,  $first 0%, $second 25%, $third 50%, $fourth 75%, $fifth 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$first), color-stop(25%,$second), color-stop(50%,$third), color-stop(75%,$fourth), color-stop(100%,$fifth)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $first 0%,$second 25%,$third 50%,$fourth 75%,$fifth 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $first 0%,$second 25%,$third 50%,$fourth 75%,$fifth 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $first 0%,$second 25%,$third 50%,$fourth 75%,$fifth 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $first 0%,$second 25%,$third 50%,$fourth 75%,$fifth 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$first', endColorstr='$fifth',GradientType=0 ); /* IE6-9 */
+
+}
+
 @mixin linear-gradient-six($first, $second, $third, $fourth, $fifth, $sixth) {
   background: $first;
   background: -moz-linear-gradient(top,  $first 0%, $second 21%, $third 41%, $fourth 62%, $fifth 82%, $sixth 100%); /* FF3.6+ */
