@@ -3,7 +3,7 @@
     App.Components.Star = React.createClass({displayName: "Star",
         render: function(){
             return(
-                React.createElement("svg", {className: "star"}, 
+                React.createElement("svg", {className: "star", viewBox: "0 0 90 90"}, 
                     React.createElement("g", null, 
                         React.createElement("path", {fill: "#333333", stroke: "none", d: 
                             "M 45 45" + ' ' +

@@ -1,22 +1,23 @@
-(function (React, App) {
+(function (React, App, $) {
 
     App.Components.Tablet = React.createClass({displayName: "Tablet",
 
         handleScroll: function(event) {
 
-            var scrollTop = event.srcElement.body.scrollTop;
+            var scrollTop = event.srcElement.body.scrollTop,
+                contentOffset = ($('.gold-border').height() - $('.face-content').height()) / 2;
 
-            if(scrollTop > 300) {
-                this.setState({
-                    shineOffset: scrollTop - 300
+            this.setState({
+                goldBorderShineOffset: scrollTop,
+                tabletFaceShineOffset: scrollTop - contentOffset
                 });
-            }
-            
+
         },
 
         getInitialState: function() {
           return{
-              shineOffset: 0
+              goldBorderShineOffset: 0,
+              tabletFaceShineOffset: 0
           };
         },
 
@@ -25,10 +26,10 @@
             return(
                 React.createElement("div", {className: "tablet"}, 
                     React.createElement("div", {className: "gold-border"}, 
-                        React.createElement("div", {className: "shine gold-border-shine", style: {top: this.state.shineOffset + 'px'}}), 
+                        React.createElement("div", {className: "shine gold-border-shine", style: {top: this.state.goldBorderShineOffset + 'px'}}), 
                         React.createElement("div", {className: "black-border"}, 
                             React.createElement("div", {className: "face"}, 
-                                React.createElement("div", {className: "shine face-shine", style: {top: this.state.shineOffset + 'px'}}), 
+                                React.createElement("div", {className: "shine face-shine", style: {top: this.state.tabletFaceShineOffset + 'px'}}), 
                                 React.createElement(App.Components.FaceContent, null)
                             )
                         )
@@ -51,4 +52,4 @@
         }
     });
 
-})(React, App);
+})(React, App, jQuery);
