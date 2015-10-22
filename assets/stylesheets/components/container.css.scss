@@ -6,23 +6,10 @@
   text-align: center;
   background-color: $sunrise-outer;
   overflow: hidden;
+  text-transform: uppercase;
 
   .content {
     z-index: 100;
     position: relative;
   }
-
-
-
 }
-
-//$red: #f00;
-//$white: #fff;
-//
-//.red-box {
-//  background-color: $red;
-//
-//  .text {
-//    color: $white;
-//  }
-//}

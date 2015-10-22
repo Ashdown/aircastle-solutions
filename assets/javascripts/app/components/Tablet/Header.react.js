@@ -3,16 +3,13 @@
     App.Components.Header = React.createClass({
         render: function(){
             return(
-                <header>
-                    <App.Components.Star/>
-                    <h1 className="main-header">
-
+                <header className="header">
+                    <h1 className="main-heading">
                         <App.Components.Text content="Aircastle Solutions"/>
                     </h1>
-                    <App.Components.Star/>
                 </header>
                 )
         }
-    })
+    });
 
 })(React, App);

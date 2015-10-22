@@ -1,4 +1,4 @@
-(function(App, React){
+(function(App, React, $){
 
     App.Components.Text = React.createClass({
         render: function(){
@@ -10,4 +10,4 @@
         }
     });
 
-})(App, React);
+})(App, React, jQuery);

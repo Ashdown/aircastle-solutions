@@ -3,8 +3,6 @@
 .tablet {
 
   position: relative;
-  font-size: 32px;
-  color: #333;
   overflow: hidden;
   padding-bottom: 32px;
 
@@ -45,11 +43,6 @@
 
   .face-shine {
     @include radial-gradient(#f6d995, #af8050);
-  }
-
-  .main-header {
-    font-size: 30px;
-    margin-top: 8px;
   }
 
   .background {

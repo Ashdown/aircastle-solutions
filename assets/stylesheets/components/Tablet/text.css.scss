@@ -14,9 +14,3 @@
     opacity: 0.1;
   }
 }
-
-@include respond-to(desktop) {
-  .text {
-    font-size: 61px;
-  }
-}

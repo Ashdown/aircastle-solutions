@@ -5,48 +5,50 @@
             return(
                 <div className="face-content">
                     <App.Components.Header/>
-                    <h2>
-                        <App.Components.Text content="Software Development"/>
+                    <h2 className="secondary-title">
+                        <App.Components.Text content="Software Development and Consultancy"/>
                     </h2>
                     <ul>
                         <li>
-                            <h3>
+                            <h3 className="technology">
                                 <App.Components.Text content="JavaScript"/>
                             </h3>
                             <ul>
-                                <li>
+                                <li className="technology">
                                     <App.Components.Text content="React"/>
                                 </li>
-                                <li>
+                                <li className="technology">
                                     <App.Components.Text content="AngularJS"/>
                                 </li>
-                                <li>
+                                <li className="technology">
                                     <App.Components.Text content="Ember.js"/>
                                 </li>
-                                <li>
+                                <li className="technology">
                                     <App.Components.Text content="jQuery"/>
                                 </li>
-                                <li>
+                                <li className="technology">
                                     <App.Components.Text content="Raphaël"/>
                                 </li>
                             </ul>
                         </li>
-                        <li>
+                        <li className="technology">
                             <App.Components.Text content="CSS"/>
                         </li>
-                        <li>
+                        <li className="technology">
                             <App.Components.Text content="Ruby Sinatra"/>
                         </li>
-                        <li>
+                        <li className="technology">
                             <App.Components.Text content="Heroku"/>
                         </li>
                     </ul>
-                    <h2>
+                    <h2 className="secondary-title">
                         <App.Components.Text content="Links"/>
                     </h2>
                     <ul>
-                        <li>
-                            <a href="https://github.com/"> GitHub</a>
+                        <li className="technology">
+                            <a className="link" title="GitHub" href="https://github.com/Ashdown">
+                                <App.Components.Text content="GitHub"/>
+                            </a>
                         </li>
                     </ul>
                 </div>
