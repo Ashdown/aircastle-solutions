@@ -5,9 +5,10 @@
             return(
                 React.createElement("div", {className: "face-content"}, 
                     React.createElement(App.Components.Header, null), 
-                    React.createElement("h2", {className: "secondary-title"}, 
+                    React.createElement("p", {className: "para"}, 
                         React.createElement(App.Components.Text, {content: "Software Development and Consultancy"})
                     ), 
+                    React.createElement(App.Components.SecondaryTitle, {content: "Technologies"}), 
                     React.createElement("ul", null, 
                         React.createElement("li", null, 
                             React.createElement("h3", {className: "technology"}, 
@@ -41,9 +42,7 @@
                             React.createElement(App.Components.Text, {content: "Heroku"})
                         )
                     ), 
-                    React.createElement("h2", {className: "secondary-title"}, 
-                        React.createElement(App.Components.Text, {content: "Links"})
-                    ), 
+                    React.createElement(App.Components.SecondaryTitle, {content: "Links"}), 
                     React.createElement("ul", null, 
                         React.createElement("li", {className: "technology"}, 
                             React.createElement("a", {className: "link", title: "GitHub", href: "https://github.com/Ashdown"}, 
@@ -52,7 +51,7 @@
                         )
                     )
                 )
-                );
+            );
         }
 
     });
