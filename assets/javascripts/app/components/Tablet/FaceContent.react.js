@@ -5,9 +5,10 @@
             return(
                 <div className="face-content">
                     <App.Components.Header/>
-                    <h2 className="secondary-title">
+                    <p className="para">
                         <App.Components.Text content="Software Development and Consultancy"/>
-                    </h2>
+                    </p>
+                    <App.Components.SecondaryTitle content="Technologies"/>
                     <ul>
                         <li>
                             <h3 className="technology">
@@ -41,9 +42,7 @@
                             <App.Components.Text content="Heroku"/>
                         </li>
                     </ul>
-                    <h2 className="secondary-title">
-                        <App.Components.Text content="Links"/>
-                    </h2>
+                    <App.Components.SecondaryTitle content="Links"/>
                     <ul>
                         <li className="technology">
                             <a className="link" title="GitHub" href="https://github.com/Ashdown">
@@ -52,7 +51,7 @@
                         </li>
                     </ul>
                 </div>
-                );
+            );
         }
 
     });

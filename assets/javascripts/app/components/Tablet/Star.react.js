@@ -1,9 +1,17 @@
 (function(React, App){
 
     App.Components.Star = React.createClass({
+
+
+        getInitialState: function(){
+            return({
+                class: "star " + this.props.type
+            })
+        },
+
         render: function(){
             return(
-                <svg className="star" viewBox="0 0 90 90">
+                <svg className={this.state.class} viewBox="0 0 90 90">
                     <g>
                         <path fill="#333333" stroke="none" d="
                             M 45 45

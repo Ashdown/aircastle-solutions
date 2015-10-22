@@ -1,12 +1,17 @@
+@import '../mixins';
+
 .face-content {
   position: relative;
   z-index: 100;
   color: #333;
   padding: 0 4px 8px 4px;
 
+  .star {
+    display: none;
+  }
+
   .header {
     margin-top: 8px;
-    height: 24px;
   }
 
   .main-heading {
@@ -15,6 +20,7 @@
     display: inline-block;
   }
 
+  .para,
   .secondary-title {
     margin-top: 8px;
     font-size: 18px;
@@ -32,10 +38,47 @@
     color: #333;
   }
 
-  .star {
-    display: inline-block;
-    height: 16px;
-    width: auto;
-  }
+}
 
+@include respond-to(tablet) {
+  .face-content {
+    padding: 0 8px 16px 8px;
+
+    .star {
+      display: inline-block;
+      height: 28px;
+      width: auto;
+      float: left;
+      margin: 0 4px 1px 4px;
+    }
+
+    .star.right {
+      float: right;
+    }
+
+    .main-heading {
+      margin-top: 12px;
+      font-size: 32px;
+    }
+
+    .para,
+    .secondary-title {
+      font-size: 32px;
+    }
+
+    .para {
+      margin-top: 16px;
+    }
+
+    .secondary-title {
+      margin-top: 24px;
+      display: inline-block;
+    }
+
+    .technology {
+      margin-top: 12px;
+      font-size: 24px;
+    }
+
+  }
 }
