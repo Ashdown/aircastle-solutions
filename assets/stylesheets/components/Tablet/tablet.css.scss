@@ -4,14 +4,18 @@
 
   position: relative;
   overflow: hidden;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
+
+  .tablet-content {
+    margin: 0 3%;
+    z-index: 100;
+    position: relative;
+  }
 
   .gold-border {
-    margin: 0 3%;
     overflow: hidden;
     background-color: #513717;
     position: relative;
-    z-index: 100;
   }
 
   .shine {
@@ -75,9 +79,10 @@
 
 @include respond-to(tablet) {
   .tablet {
-    .gold-border {
+    .tablet-content {
       margin: 0 6%;
     }
+
     .shine {
       height: 608px;
       margin-top: -304px;
@@ -94,7 +99,7 @@
 
 @include respond-to(desktop) {
   .tablet {
-    .gold-border {
+    .tablet-content {
       width: 800px;
       margin: 0 auto;
     }

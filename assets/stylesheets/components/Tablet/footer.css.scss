@@ -1,0 +1,14 @@
+@import '../mixins';
+
+.footer {
+  margin-top: 12px;
+  font-size: 12px;
+  text-transform: none;
+}
+
+@include respond-to(tablet) {
+  .footer {
+    font-size: 16px;
+    text-align: right;
+  }
+}
