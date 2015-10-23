@@ -4,7 +4,8 @@
         render: function(){
             return(
                 <footer className="footer">
-                    <p>© Copyright 2015 Aircastle Soltions Ltd</p>
+                    <App.Components.Logo/>
+                    <p className="para">© Copyright 2015 Aircastle Soltions Ltd</p>
                 </footer>
             );
         }

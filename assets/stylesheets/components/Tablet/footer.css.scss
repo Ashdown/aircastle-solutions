@@ -1,14 +1,33 @@
 @import '../mixins';
 
 .footer {
-  margin-top: 12px;
   font-size: 12px;
   text-transform: none;
+  padding: 4px 0 0 0;
+  overflow: hidden;
+
+  .logo {
+    height: 28px;
+    width: auto;
+    float: left;
+    margin-left: -3px;
+  }
+
+  .para {
+    float: right;
+    line-height: 28px;
+    color: #666;
+  }
+
 }
 
 @include respond-to(tablet) {
   .footer {
     font-size: 16px;
     text-align: right;
+
+    .logo {
+      height: 32px;
+    }
   }
 }
